@@ -6,7 +6,7 @@ import { InteractionHelper } from '../../utils/interactionHelper.js';
 import { ModerationService } from '../../services/moderation/moderationService.js';
 
 const durationChoices = [
-    { name: "5 minutes", value: 5 },
+    { name: "spamming 6 dif msg under 5 min ", value: 5 },
     { name: "10 minutes", value: 10 },
     { name: "30 minutes", value: 30 },
     { name: "1 hour", value: 60 },
