@@ -15,7 +15,7 @@ const PREMIUM_BONUS_PERCENTAGE = 0.1;
 export default {
     data: new SlashCommandBuilder()
         .setName('daily')
-        .setDescription('Claim your daily cash reward'),
+        .setDescription('Claim your daily Duckbucks reward'),
 
     execute: withErrorHandling(async (interaction, config, client) => {
         const deferred = await InteractionHelper.safeDefer(interaction);
@@ -89,7 +89,7 @@ export default {
                 `You have claimed your daily **$${earned.toLocaleString()}**!${bonusMessage}`
             )
                 .addFields({
-                    name: "New Cash Balance",
+                    name: "New Duckbucks Balance",
                     value: `$${userData.wallet.toLocaleString()}`,
                     inline: true,
                 })
